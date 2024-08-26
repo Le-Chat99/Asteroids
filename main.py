@@ -42,7 +42,7 @@ def main():
                 sys.exit()
             for bullet in shots:
                 if obj.collision(bullet):
-                    obj.kill()
+                    obj.split()
                     bullet.kill()
 
         screen.fill("black")
